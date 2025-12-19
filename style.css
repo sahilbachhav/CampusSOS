@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container {
+  background: #020617;
+  width: 100%;
+  max-width: 420px;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+h1 {
+  color: #f87171;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 12px;
+}
+
+
+.chatbox {
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.chat-messages {
+  max-height: 160px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 14px;
+}
+
+.bot { color: #38bdf8; margin-bottom: 6px; }
+.user { color: #e5e7eb; margin-bottom: 6px; }
+
+.chat-input {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.chat-input button {
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.medical { background: #dc2626; color: white; }
+.fire { background: #ea580c; color: white; }
+.security { background: #2563eb; color: white; }
+.call { background: #16a34a; color: white; }
+
+button:active { transform: scale(0.98); }
+
+.service-box { margin-bottom: 8px; }
+
+hr {
+  margin: 12px 0;
+  border: 1px solid #334155;
+}
+
+
+.location {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.location a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.hidden { display: none; }
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #020617;
+  color: #94a3b8;
+  font-size: 12px;
+  border-top: 1px solid #334155;
+}

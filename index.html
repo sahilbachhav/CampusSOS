@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusSOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>🚨 CampusSOS</h1>
+
+    <p class="desc">
+      Intelligent campus emergency response system.
+      Chat or tap a button to get help instantly.
+    </p>
+
+    <div class="chatbox">
+      <div id="chatMessages" class="chat-messages">
+        <div class="bot">🤖 Hi! Tell me what’s happening. I’ll help you.</div>
+      </div>
+
+      <div class="chat-input">
+        <input id="chatInput" type="text" placeholder="Describe the emergency..." />
+        <button onclick="sendChat()">Send</button>
+      </div>
+    </div>
+
+  
+    <div id="locationBox" class="location hidden">
+      <p><b>📍 Live Location Shared</b></p>
+      <p id="coords"></p>
+      <a id="mapLink" target="_blank">Open in Google Maps</a>
+    </div>
+
+    <hr />
+
+    
+    <div class="service-box">
+      <button class="medical" onclick="shareLocation('medical')">
+        📩 Share Location (Medical)
+      </button>
+      <button class="call" onclick="callOnly('medical')">
+        📞 Call Ambulance
+      </button>
+    </div>
+
+    
+    <div class="service-box">
+      <button class="fire" onclick="shareLocation('fire')">
+        📩 Share Location (Fire)
+      </button>
+      <button class="call" onclick="callOnly('fire')">
+        📞 Call Fire Safety
+      </button>
+    </div>
+
+    
+    <div class="service-box">
+      <button class="security" onclick="shareLocation('security')">
+        📩 Share Location (Security)
+      </button>
+      <button class="call" onclick="callOnly('security')">
+        📞 Call Security
+      </button>
+    </div>
+  </div>
+
+  
+  <footer class="footer">
+    © 2025 CrisisCode. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
